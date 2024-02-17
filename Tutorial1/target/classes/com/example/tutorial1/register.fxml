@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="663.0" prefWidth="1056.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tutorial1.Registercontroller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#47397c" height="92.0" stroke="TRANSPARENT" strokeType="INSIDE" width="1056.0" />
+      <Text fill="WHITE" layoutX="336.0" layoutY="59.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registration Form">
+         <font>
+            <Font name="Consolas Bold" size="41.0" />
+         </font>
+      </Text>
+      <Line endX="-100.0" endY="-142.0" layoutX="628.0" layoutY="314.0" startX="-100.0" startY="287.0" stroke="#47397c" />
+      <Text layoutX="54.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Personal Details">
+         <font>
+            <Font name="Consolas" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Details">
+         <font>
+            <Font name="Consolas" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="575.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Details">
+         <font>
+            <Font name="Consolas" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="54.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="First Name">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="55.0" layoutY="296.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Name">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <DatePicker editable="false" layoutX="191.0" layoutY="339.0" prefHeight="26.0" prefWidth="122.0" style="-fx-background-color: #47397C; -fx-border-color: #FFFFFF;" />
+      <Text layoutX="54.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Birthday">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="firstname" layoutX="188.0" layoutY="218.0" prefHeight="26.0" prefWidth="266.0" />
+      <TextField fx:id="lastname" layoutX="188.0" layoutY="269.0" prefHeight="26.0" prefWidth="266.0" />
+      <CheckBox layoutX="54.0" layoutY="398.0" mnemonicParsing="false" text="Male" textFill="#47397c">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="210.0" layoutY="398.0" mnemonicParsing="false" text="Female" textFill="#47397c">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox layoutX="357.0" layoutY="398.0" mnemonicParsing="false" text="Other" textFill="#47397c">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </CheckBox>
+      <Text layoutX="61.0" layoutY="538.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="61.0" layoutY="586.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone Number">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="579.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="83.0">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="580.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="83.0">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="579.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Re-Enter Password" wrappingWidth="157.244140625">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Text>
+      <Button id="submitbutton" defaultButton="true" layoutX="579.0" layoutY="463.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="75.0" style="-fx-background-color: #47397C;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="Consolas" size="15.0" />
+         </font>
+      </Button>
+      <Button id="clearbutton" cancelButton="true" layoutX="931.0" layoutY="463.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" style="-fx-background-color: #47397C;" text="Clear" textFill="WHITE" />
+      <TextField fx:id="username" layoutX="761.0" layoutY="224.0" prefHeight="26.0" prefWidth="252.0" />
+      <PasswordField layoutX="761.0" layoutY="272.0" prefHeight="26.0" prefWidth="252.0" />
+      <PasswordField layoutX="761.0" layoutY="323.0" prefHeight="26.0" prefWidth="252.0" />
+      <TextField fx:id="email" layoutX="191.0" layoutY="514.0" prefHeight="26.0" prefWidth="266.0" />
+      <TextField fx:id="phonenumberfield" layoutX="191.0" layoutY="561.0" prefHeight="26.0" prefWidth="266.0" />
+      <Label layoutX="94.0" layoutY="369.0" textFill="#f80707" />
+      <Label fx:id="ageerrorlable" layoutX="119.0" layoutY="368.0" textFill="#f50808" />
+      <Label fx:id="phonenumberlable" layoutX="194.0" layoutY="602.0" />
+   </children>
+</AnchorPane>
